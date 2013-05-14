@@ -12,6 +12,9 @@
 .*
 *.o
 *.o.*
+mkalokimg.sh
+Image
+zImage
 *.a
 *.s
 *.ko
