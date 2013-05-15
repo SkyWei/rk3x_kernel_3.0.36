@@ -1,3 +1,10 @@
-Derived from Galland's Kernel.
+Derived from crewRKtablet, Mediatek files, Galland's 3.0.36 upgrade, olgek0 Mali support.
 
 3.0.36 kernel
+ - Mali support
+ - MediaTek support - under work
+ - 3.0.36 upgrade done...
+ 
+ Not for public release, it will be broken at so many places :)
+ 
+ Alok
