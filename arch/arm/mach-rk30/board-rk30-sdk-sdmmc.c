@@ -25,12 +25,12 @@ static void rk29_sdmmc_gpio_open(int device_id, int on)
             #ifdef CONFIG_SDMMC0_RK29
             if(on)
             {
-                gpio_direction_output(GPIO3B_GPIO3B0,GPIO_HIGH);//set mmc0-clk to high
-                gpio_direction_output(GPIO3B_GPIO3B1,GPIO_HIGH);// set mmc0-cmd to high.
-                gpio_direction_output(GPIO3B_GPIO3B2,GPIO_HIGH);//set mmc0-data0 to high.
-                gpio_direction_output(GPIO3B_GPIO3B3,GPIO_HIGH);//set mmc0-data1 to high.
-                gpio_direction_output(GPIO3B_GPIO3B4,GPIO_HIGH);//set mmc0-data2 to high.
-                gpio_direction_output(GPIO3B_GPIO3B5,GPIO_HIGH);//set mmc0-data3 to high.
+                gpio_direction_output(RK30_PIN3_PB0,GPIO_HIGH);//set mmc0-clk to high
+                gpio_direction_output(RK30_PIN3_PB1,GPIO_HIGH);// set mmc0-cmd to high.
+                gpio_direction_output(RK30_PIN3_PB2,GPIO_HIGH);//set mmc0-data0 to high.
+                gpio_direction_output(RK30_PIN3_PB3,GPIO_HIGH);//set mmc0-data1 to high.
+                gpio_direction_output(RK30_PIN3_PB4,GPIO_HIGH);//set mmc0-data2 to high.
+                gpio_direction_output(RK30_PIN3_PB5,GPIO_HIGH);//set mmc0-data3 to high.
 
                 mdelay(30);
             }
@@ -76,7 +76,7 @@ static void rk29_sdmmc_gpio_open(int device_id, int on)
                 gpio_direction_output(RK30_PIN3_PC1,GPIO_HIGH);//set mmc1-data0 to high.
                 gpio_direction_output(RK30_PIN3_PC2,GPIO_HIGH);//set mmc1-data1 to high.
                 gpio_direction_output(RK30_PIN3_PC3,GPIO_HIGH);//set mmc1-data2 to high.
-                gpio_direction_output(RK30_PIN3_PC5,GPIO_HIGH);//set mmc1-data3 to high.
+                gpio_direction_output(RK30_PIN3_PC4,GPIO_HIGH);//set mmc1-data3 to high.
                 mdelay(100);
             }
             else
@@ -511,9 +511,9 @@ static struct resource resources[] = {
 
     #define USE_SDMMC_CONTROLLER_FOR_WIFI 1
     #define RK29SDK_WIFI_COMBO_GPIO_POWER_N      RK30_PIN3_PD0   //Galland: WIFI_EN in schematic
-//Galland: I comment the original RESET_N to connect it to SYSRST_B
-//    #define RK29SDK_WIFI_COMBO_GPIO_RESET_N      RK30_PIN3_PD1   //Galland: BT_RST  in schematic
-    #define RK29SDK_WIFI_COMBO_GPIO_RESET_N      RK30_PIN3_PC6   //Galland: SYSRST_B  in schematic
+//NO: Galland: I comment the original RESET_N to connect it to SYSRST_B
+    #define RK29SDK_WIFI_COMBO_GPIO_RESET_N      RK30_PIN3_PD1   //Galland: BT_RST  in schematic
+//    #define RK29SDK_WIFI_COMBO_GPIO_RESET_N      RK30_PIN3_PC6   //Galland: SYSRST_B  in schematic
 
     #define RK29SDK_WIFI_COMBO_GPIO_WIFI_INT_B   RK30_PIN3_PD2   //Galland: BT_EINT in schematic
     
