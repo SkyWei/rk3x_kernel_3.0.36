@@ -167,6 +167,6 @@ source "drivers/staging/nvec/Kconfig"
 
 source "drivers/staging/sn/Kconfig"
 
-source "drivers/staging/mtk_wcn_combo/Kconfig"
+# source "drivers/staging/mtk_wcn_combo/Kconfig"
 
 endif # STAGING
