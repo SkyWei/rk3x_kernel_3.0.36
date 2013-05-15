@@ -75,3 +75,4 @@ obj-$(CONFIG_DRM_PSB)		+= gma500/
 obj-$(CONFIG_INTEL_MEI)		+= mei/
 obj-$(CONFIG_MFD_NVEC)		+= nvec/
 obj-$(CONFIG_RK_SN)		+= sn/
+obj-$(CONFIG_MTK_COMBO)     	+= mtk_wcn_combo/
